@@ -1,0 +1,172 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+    linkcolor=black}
+ 
+\urlstyle{same}
+
+\title{GECo-Unicup Rules}
+\author{Oliver "SemigeileSumpfkuh" Hliddal & Jan "Icy" Urech}
+\date{June 2019}
+
+\begin{document}
+
+\makeatletter
+\begin{titlepage}
+\centering
+\includegraphics[scale=0.075]{GECo.png}\\
+\LARGE \@title\\ \normalsize by \@author\\ \@date
+\end{titlepage}
+\makeatother
+
+\clearpage
+
+\tableofcontents
+\clearpage
+
+\section{General Tournament Rules}
+ 
+
+\subsection{Tournament date}
+The tournament will start October 5th at 14:00 CET.
+
+\subsection{Participant eligibility}
+On the event date the participants of a team need to be matriculated in a Higher Education Institution located in the same canton in Switzerland. A list of these Institutions can be found \href{https://www.swissuniversities.ch/en/higher-education-area/recognised-swiss-higher-education-institutions/}{here}.
+
+\subsection{Sign up}
+The team captain is in charge of signing up the entire team.
+During the sign up process she/he will need to provide a picture of the student ID card for each of the five players. Sign up \href{https://www.toornament.com/tournaments/2637580453799936000/information}{here}
+
+\subsection{Tournament Communication}
+Join our \href{https://discord.gg/geco}{Discord} and unlock the CSGO channel using the channel-unlocker. In case of a problem or question contact \$emigeile\$umpfkuh\#6207 on discord.
+
+\subsection{Teams}
+A team consists of 5 players.
+Each team has to be full to participate in the tournament. After the event start there are no roster changes allowed. Substitutes are not allowed.
+
+\subsection{Team captain}
+The team captain is responsible for the whole team. He’s in charge of
+communication with other teams and the tournament organizer.
+If the tournament is not using eBot, the team captain of the losing team has to announce the result to the tournament organizer right after the end of their match. The team captain has to be reachable on discord by the organizer throughout the entire event.
+
+
+\subsection{Playtimes}
+Teams have to be ready to play at the date and time of the tournament. Between two matches teams can take a break of 10 minutes. If all matches of a round are finished, the next set of matches has to start within 15 minutes. Teams that are not present at that time will be punished.
+
+\subsection{Player Behavior}
+\subsubsection{Cheating}
+Any kind of cheating is strictly forbidden.\\
+Abusing bugs on purpose, using any third-party software that gives you an unfair advantage and ghosting in any way are also considered cheating.
+
+\subsubsection{Flaming}
+Don't be toxic!
+The event should be fun for everyone.
+
+
+\subsubsection{Tournament organizer instructions}
+Always follow the instructions of the tournament organizers.
+They will contact you directly or mention the team captains in the announcement channel.
+
+\section{Tournament \& Match format}
+The tournament will be held in a single-elimination bracket.In Single-Elimination each team is eliminated when it loses a matchup.
+Each map ends when one team has won 16 rounds in regulation or won the overtime. All matches after and including the semifinals are held in best of three format. 
+
+\subsection{Overtime}
+If a game cannot be decided within the normal game length of 30 rounds(15-15) the match will be prolonged by as many overtimes as needed.A overtime is played with maxrounds 3 and startmoney 10’000\$.
+
+
+\section{Matches}
+
+\subsection{Map pool}
+The map pool contains all maps from the active duty mappool that is used in competitive play.
+\begin{itemize}
+  \item de\_mirage
+  \item de\_nuke
+  \item de\_inferno
+  \item de\_overpass
+  \item de\_train
+  \item de\_vertigo
+  \item de\_dust2
+\end{itemize}
+
+
+\subsection{Map veto}
+Team A is the team in the upper slot of the box on Toornament.\\
+Best of 1 veto:
+\begin{enumerate}
+\item Team A bans 2 maps
+\item Team B bans 3 maps
+\item Team A picks from the two remaining maps for game 1
+\end{enumerate}
+Best of 3 veto:
+\begin{enumerate}
+\item Team A bans 1 map
+\item Team B bans 1 map
+\item Team A picks the map for game 1
+\item Team B picks the map for game 2
+\item Team B bans 1 map
+\item Team A picks from the two remaining maps for game 3
+\end{enumerate}
+
+
+
+\subsection{Server}
+The servers will be provided by the tournament organizer. If a problem with the server occurs, pause the game and contact the admin. If the server issues continue, a change to external servers (popflash.gg, etc.) is possible.
+
+\subsection{Kniferound}
+Every map starts with a kniferound to decide who plays on which side.
+
+\subsection{Pause}
+Do not hesitate to use the pause function if you are experiencing any kind of problem or want to take a tactical timeout. \\
+\\Technical pause: Write {\fontfamily{pcr}\selectfont 
+!pause}  into the ingame chat at any time to pause the match after the next freezetime. If you can't fix a problem on your own contact an admin. Use {\fontfamily{pcr}\selectfont 
+!unpause} to continue the match. You are not allowed to use these pauses to discuss things other than the technical problem. Generally you should avoid talking to your teammates during these pauses unless you are fixing the problem making the pause necessary in the first place.\\
+\\Tactical pause: Vote with the ingame callvote menu "*press esc*/Callvote.../Call a tactical Timeout". Then your team has to accept it by pressing F1. You can only take four 30 seconds timeouts on each map.
+
+
+\section{Player settings}
+\subsection{Scripts, binds etc.}
+Scripts(multi command binds) are in general prohibited only Buyscripts and \textbf{Jump-Throw binds are allowed.}
+
+\subsection{Additional Software}
+It is not allowed to use external software which gives you an advantage. e.g.(NoRecoil, AutoBHop, Lagswitcher). Using any software using Game State Integration is forbidden.\\
+It isn't allowed to use any software to change the appearance of the game with the exception of the standard graphic drivers and monitor settings e.g.(Digital Vibrance, Contrast, Brightness)
+It is forbidden to use \textbf{Nvidia Freestyle} and you are not allowed to use any external \textbf{crosshair}.
+
+
+\section{Server settings}
+All servers are running on 128 Tick and will force you to use 128 Tick settings.\\
+At matchstart the settings are automatically loaded.\\
+We are using the 5v5.cfg provided here:
+\url{https://geco.ethz.ch/csgo5v5cfg} \\\\
+Differences to esl5on5.cfg:\\
+\begin{tabular}{ | l | l | }
+	\hline			
+	sv$\_$gameinstructor$\_$disable 1 & enforcing tournament rules\\
+	sv$\_$teamid$\_$overhead$\_$always$\_$prohibit 1 & \\
+	sv$\_$show$\_$team$\_$equipment$\_$prohibit 0 & \\
+	sv$\_$max$\_$allowed$\_$net$\_$graph 1 &  \\
+	\hline
+	mp$\_$freezetime 20 & longer freezetime\\
+	mp$\_$buytime 20 & \\
+	\hline
+	mp$\_$team$\_$timeout$\_$max 4 & tactical pause settings\\
+	mp$\_$team$\_$timeout$\_$time 30 & \\
+	\hline
+	sv$\_$maxrate 0 & enforcing 128 tick \\
+	sv$\_$maxupdaterate 128 & \\
+	sv$\_$minrate 786432 & \\
+	sv$\_$minupdaterate 128 & \\
+	sv$\_$mincmdrate 128 & \\
+	\hline  
+\end{tabular}
+
+
+
+
+\end{document}
