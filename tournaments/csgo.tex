@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 
 \title{Counter-Strike:Global Offensive}
-\author{Jan 'Icy' Urech }
+\author{Jan 'Icy' Urech}
 \date{\today}
 
 \usepackage{natbib}
@@ -15,7 +15,7 @@
 \makeatletter
 \begin{titlepage}
 \centering
-\includegraphics[scale=0.075]{../img/GECo.png}\\
+\includegraphics[scale=0.1]{../img/PolyLAN_Zurich_black.png}\\
 \LARGE \@title\\ Tournament Rules\\ \normalsize by \@author\\ \@date
 \end{titlepage}
 \makeatother
@@ -48,24 +48,24 @@ The mappool consists of the following maps:
     %Nr. of maps must be odd for the veto to work properly
     %\item de\_cache
     %\item de\_cbble
+    \item de\_ancient
     \item de\_dust2
     \item de\_inferno
     \item de\_mirage
     \item de\_nuke
     \item de\_overpass
     %\item de\_season
-    \item de\_train
     \item de\_vertigo
 \end{itemize}
 
 \pagebreak
 \section{Matches}
 
-\subsection{POV demo}
-Each player has to record a POV demo by typing record 'demoname' into the console.
-The recording can be stopped by either closing the game or typing 'stop' into the console.\\
-Demos have to be available for 6 hours after the end of the match.\\
-Any POV demo can be requested by an Admin during this timespan.
+%\subsection{POV demo}
+%Each player has to record a POV demo by typing record 'demoname' into the console.
+%The recording can be stopped by either closing the game or typing 'stop' into the console.\\
+%Demos have to be available for 6 hours after the end of the match.\\
+%Any POV demo can be requested by an Admin during this timespan.
 
 \subsection{Mapveto}
 Use \href{http://adminafk.geco.local/pages/veto.php}{adminafk.geco.local} to do the vetoes.\\
@@ -91,7 +91,7 @@ Best of 3:
 \end{enumerate}
 
 \subsection{Server}
-The server for the matches are assigned by the admins on \href{http://ebot.geco.local}{ebot.geco.local}.\\
+The server for the matches are assigned by the admins on \href{http://ebot.geco.local}{ebot.geco.local} and \href{http://adminafk.geco.local/pages/veto.php}{adminafk.geco.local}.\\
 When you have connected to the server change to the map that won the veto by typing {\fontfamily{pcr}\selectfont 
 !pick mapname} into the ingame chat.
 
@@ -101,20 +101,16 @@ Every map starts with a kniferound to decide who plays on which side.
 
 \subsection{Pause}
 \label{sec:pause}
-Do not hesitate to use the pause function if you are experiencing any kind of problem or want to take a tactical timeout.\\
-\\Technical pause: Write {\fontfamily{pcr}\selectfont 
-!pause}  into the ingame chat at any time to pause the match after the next freezetime. If you can't fix a problem on your own contact an admin. Use {\fontfamily{pcr}\selectfont 
-!unpause} to continue the match. You are not allowed to use these pauses to discuss things other than the technical problem. Generally you should avoid talking to your teammates during these pauses unless you are fixing the problem making the pause necessary in the first place.\\
-\\Tactical pause: Vote with the ingame callvote menu "*press esc*/Callvote.../Call a tactical Timeout". Then your team has to accept it by pressing F1. You can only take two 60 seconds timeouts on each map.
-
-
-
+Do not hesitate to use the pause function if you are experiencing any kind of problem or want to take a tactical timeout. Write {\fontfamily{pcr}\selectfont !pause} into the ingame chat at any time to pause the match after the next freezetime. Use {\fontfamily{pcr}\selectfont 
+!unpause} to continue the match. 
+\\Technical pause: When you need a tech pause state the reason for your pause in the chat. You are not allowed to use these pauses to discuss things other than the technical problem. If you can't fix a problem on your own contact an admin.
+\\Tactical pause: You can only take two 60 seconds tactical timeouts on each map.
 
 
 \section{Player settings}
 
 \subsection{Scripts}
-Scripts(multi command binds) are in general prohibited only Buyscripts & Jump-Throw binds are allowed.
+Scripts(multi command binds) are in general prohibited only Buyscripts \& Jump-Throw binds are allowed.
 
 \subsection{Files}
 You are only allowed to modify .cfg-files (e.g. autoexec.cfg).\\
@@ -126,8 +122,8 @@ It isn't allowed to use any software to change the appearance of the game with t
 It is forbidden to use \textbf{Nvidia Freestyle} and you are not allowed to use any external \textbf{crosshair}.
 
 
-\subsection{Custom Player-model-skins}
-Skins for player-models are prohibited. The server will disable these skins.
+%\subsection{Custom Player-model-skins}
+%Skins for player-models are prohibited. The server will disable these skins.
 
 
 \pagebreak
@@ -140,18 +136,18 @@ Differences to esl5on5.cfg:\\
 \begin{tabular}{ | l | l | }
 	\hline			
 	sv$\_$gameinstructor$\_$disable 1 & enforcing tournament rules\\
-	sv$\_$teamid$\_$overhead$\_$always$\_$prohibit 1 & \\
-	sv$\_$show$\_$team$\_$equipment$\_$prohibit 1 & \\
+	%sv$\_$teamid$\_$overhead$\_$always$\_$prohibit 1 & \\
+	%sv$\_$show$\_$team$\_$equipment$\_$prohibit 1 & \\
 	sv$\_$max$\_$allowed$\_$net$\_$graph 1 &  \\
 	\hline
-	mp$\_$freezetime 20 & longer freezetime\\
-	mp$\_$buytime 20 & \\
-	\hline
-	mp$\_$team$\_$timeout$\_$max 2 & tactical pause settings\\
-	mp$\_$team$\_$timeout$\_$time 60 & \\
-	\hline
+	%mp$\_$freezetime 20 & longer freezetime\\
+	%mp$\_$buytime 20 & \\
+	%\hline
+	%mp$\_$team$\_$timeout$\_$max 2 & tactical pause settings\\
+	%mp$\_$team$\_$timeout$\_$time 60 & \\
+	%\hline
 	sv$\_$lan 1 & enforcing 128Tick  \\
-	sv$\_$maxrate 0 & and best LAN settings \\
+	sv$\_$maxrate 0 & and LAN settings \\
 	sv$\_$maxupdaterate 128 & \\
 	sv$\_$minrate 786432 & \\
 	sv$\_$minupdaterate 128 & \\
